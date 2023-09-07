@@ -1,0 +1,21 @@
+public class Recursion {
+
+public static void Fibo(int a, int b, int n){
+        if (n == 0){
+            return;
+        }
+        int c = a + b;
+        a = b;
+        b = c;
+        System.out.println(c);
+        Fibo(a, b, n-1);
+    }
+
+    public static void main(String[] args) {
+        int a = 0, b = 1;
+        System.out.println(a);
+        System.out.println(b);
+        int n = 7;
+        Fibo(a, b, n-2);
+    }
+}
